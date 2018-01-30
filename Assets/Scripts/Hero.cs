@@ -7,6 +7,10 @@ public class Hero : MonoBehaviour {
     
     Rigidbody2D myRigidBody2D;
     public float playerSpeed = 4f;
+    
+    public Needles needle;
+    public float bulletspeed;
+    public Transform shootpos;
 
     // Use this for initialization
     void Start () {
@@ -15,7 +19,7 @@ public class Hero : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        
+     Shoot();
     }
 
     private void FixedUpdate()
@@ -33,7 +37,9 @@ public class Hero : MonoBehaviour {
     {
         if (Input.GetButtonDown("Fire1"))
         {
-
-        }
+            Needles newNeedle = Instantiate(needle, shootpos.position, shootpos.rotation);
+            newNeedle.speed = bulletspeed;
+        } 
+        
     }
 }

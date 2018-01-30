@@ -100,6 +100,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpeed: 1
+  isFiring: 0
+  needle: {fileID: 114816977345564800, guid: 4687f28a87b850d44af251a0712c4991, type: 2}
+  bulletspeed: 1
+  timeBetweenShots: 0.1
+  shootpos: {fileID: 4130342178411732}
 --- !u!212 &212383403741460776
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -109,6 +114,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -124,6 +130,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
