@@ -14,23 +14,21 @@ public class Hero : MonoBehaviour
     public Transform shotSpawn;
     public float fireRate;
     float nextFire;
-
+    public Vector2 angle;
+    
 
     // Use this for initialization
     void Start()
     {
         animator = this.GetComponent<Animator>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButton("Fire1") && Time.time > nextFire)
-        {
-            nextFire = Time.time + fireRate;
-            Instantiate(shot, shotSpawn.position, shotSpawn.rotation) ;
-        }
-        
+        Shoot();
+
     }
 
     private void FixedUpdate()
@@ -45,7 +43,36 @@ public class Hero : MonoBehaviour
         GetComponent<Rigidbody2D>().velocity = targetVelocity * playerSpeed;
     }
 
-   
+    void Shoot()
+    {
+        if (Input.GetKeyDown(KeyCode.RightArrow) && Time.time > nextFire)
+        {
+            
+            angle = transform.right;
+            nextFire = Time.time + fireRate;
+            Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftArrow) && Time.time > nextFire)
+        {
+            angle = new Vector2(-1, 0); 
+            nextFire = Time.time + fireRate;
+            Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+        }
+        else if (Input.GetKeyDown(KeyCode.UpArrow) && Time.time > nextFire)
+        {
+            angle = transform.up;
+            nextFire = Time.time + fireRate;
+            Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+        }
+        else if (Input.GetKeyDown(KeyCode.DownArrow) && Time.time > nextFire)
+        {
+            angle = new Vector2(0, -1);
+            nextFire = Time.time + fireRate;
+            Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+        }
+
+    }
+
 
     void Animation()
     {
