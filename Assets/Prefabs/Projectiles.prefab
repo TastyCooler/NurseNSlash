@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4395585648522908}
   - component: {fileID: 212820009525321898}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: needle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 50102302060488614}
   - component: {fileID: 70324413703811454}
   - component: {fileID: 114729409230062134}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Projectiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}

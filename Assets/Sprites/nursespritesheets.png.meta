@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: b39bc35321b08634e8f017ed33ffe83c
-timeCreated: 1517402755
+timeCreated: 1517405826
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -34,6 +34,8 @@ TextureImporter:
     21300054: Needle_down
     21300056: Needle_left
     21300058: Needle_up
+    21300060: PowerUp_Shots
+    21300062: PowerUp_Health
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -515,7 +517,7 @@ TextureImporter:
         width: 3
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -529,7 +531,7 @@ TextureImporter:
         width: 8
         height: 3
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -542,6 +544,34 @@ TextureImporter:
         y: 105
         width: 3
         height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PowerUp_Shots
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 89
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PowerUp_Health
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 82
+        width: 5
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

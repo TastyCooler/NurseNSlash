@@ -16,8 +16,12 @@ public class Hero : MonoBehaviour
     public float fireRate;
     float nextFire;
     public Vector2 angle;
+
     public SpriteRenderer sp;
     public Sprite left,right,down,up;
+
+    public int hp = 3;
+    public bool bulletpowerup;
 
     // Use this for initialization
     void Start()
@@ -32,6 +36,7 @@ public class Hero : MonoBehaviour
     void Update()
     {
         Shoot();
+        Debug.LogFormat("Heros hp:{0}", hp);
 
     }
 
@@ -49,28 +54,38 @@ public class Hero : MonoBehaviour
 
     void Shoot()
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow) && Time.time > nextFire)
+        if (Input.GetKeyDown(KeyCode.RightArrow) && bulletpowerup == false && Time.time > nextFire )
         {
             sp.GetComponent<SpriteRenderer>().sprite = right;
             angle = transform.right;
             nextFire = Time.time + fireRate;
             Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
-        }
-        else if (Input.GetKeyDown(KeyCode.LeftArrow) && Time.time > nextFire)
+        }// else if (Input.GetKeyDown(KeyCode.RightArrow) && bulletpowerup == true && Time.time > nextFire)
+        //{
+        //    sp.GetComponent<SpriteRenderer>().sprite = right;
+        //    angle = transform.right;
+        //    nextFire = Time.time + fireRate;
+        //    Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+            
+        //    angle = new Vector2(1f, 1f);
+        //    Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+        //} 
+         if (Input.GetKeyDown(KeyCode.LeftArrow) && Time.time > nextFire)
         {
             sp.GetComponent<SpriteRenderer>().sprite = left;
             angle = new Vector2(-1, 0); 
             nextFire = Time.time + fireRate;
             Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+            
         }
-        else if (Input.GetKeyDown(KeyCode.UpArrow) && Time.time > nextFire)
+         if (Input.GetKeyDown(KeyCode.UpArrow) && Time.time > nextFire)
         {
             sp.GetComponent<SpriteRenderer>().sprite = up;
             angle = transform.up;
             nextFire = Time.time + fireRate;
             Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
         }
-        else if (Input.GetKeyDown(KeyCode.DownArrow) && Time.time > nextFire)
+         if (Input.GetKeyDown(KeyCode.DownArrow) && Time.time > nextFire)
         {
             sp.GetComponent<SpriteRenderer>().sprite = down;
             angle = new Vector2(0, -1);
