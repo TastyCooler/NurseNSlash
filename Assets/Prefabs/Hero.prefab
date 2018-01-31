@@ -22,7 +22,8 @@ GameObject:
   - component: {fileID: 212383403741460776}
   - component: {fileID: 50920970002875116}
   - component: {fileID: 61667969634175394}
-  - component: {fileID: 114812167377022056}
+  - component: {fileID: 95900545937293580}
+  - component: {fileID: 114428937523693220}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Untagged
@@ -88,7 +89,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.07, y: 0.08}
   m_EdgeRadius: 0
---- !u!114 &114812167377022056
+--- !u!95 &95900545937293580
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1327076802535374}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e25501fe034e9f041853b29229ff75d8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114428937523693220
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -96,15 +114,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1327076802535374}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75b0351a28e7692428508ab2ea11d2c9, type: 3}
+  m_Script: {fileID: 11500000, guid: 104b00273b6f79d4986032c4120aac17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 1
-  isFiring: 0
-  needle: {fileID: 114816977345564800, guid: 4687f28a87b850d44af251a0712c4991, type: 2}
-  bulletspeed: 1
-  timeBetweenShots: 0.1
-  shootpos: {fileID: 4130342178411732}
+  playerSpeed: 4
 --- !u!212 &212383403741460776
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -114,7 +127,6 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -130,7 +142,6 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5

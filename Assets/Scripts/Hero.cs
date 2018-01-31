@@ -1,45 +1,64 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Hero : MonoBehaviour {
+public class Hero : MonoBehaviour
+{
 
-    
+
     Rigidbody2D myRigidBody2D;
     public float playerSpeed = 4f;
+    Vector2 targetVelocity;
+
+    private Animator animator;
+
     
-    public Needles needle;
-    public float bulletspeed;
-    public Transform shootpos;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
+        animator = this.GetComponent<Animator>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         
-	}
-	
-	// Update is called once per frame
-	void Update () {
-     Shoot();
     }
 
     private void FixedUpdate()
     {
         Movement();
+        Animation(); 
     }
 
     void Movement()
     {
-        Vector2 targetVelocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        targetVelocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         GetComponent<Rigidbody2D>().velocity = targetVelocity * playerSpeed;
     }
 
-    void Shoot()
+   
+
+    void Animation()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (targetVelocity.x > 0)
         {
-            Needles newNeedle = Instantiate(needle, shootpos.position, shootpos.rotation);
-            newNeedle.speed = bulletspeed;
-        } 
-        
+            animator.SetInteger("Direction", 2);
+        }
+        else if (targetVelocity.x < 0)
+        {
+            animator.SetInteger("Direction", 4);
+        }
+        else if (targetVelocity.y > 0)
+        {
+            animator.SetInteger("Direction", 3);
+        }
+        else if (targetVelocity.y < 0)
+        {
+            animator.SetInteger("Direction", 1);
+        }
+        else
+        {
+            animator.SetInteger("Direction", 0);
+        }
     }
 }

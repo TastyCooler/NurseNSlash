@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Nurse : MonoBehaviour {
-
-
+    
+    
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+        
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -18,6 +19,13 @@ public class Nurse : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D trigger)
     {
-        Destroy(gameObject);
+       
+
+        
+            Destroy(gameObject);
+        
+       
+        
+        
     }
 }
