@@ -5,6 +5,7 @@ public class Hero : MonoBehaviour
 
 
     Rigidbody2D myRigidBody2D;
+    [Range(0, 2.5f)]
     public float playerSpeed = 4f;
     Vector2 targetVelocity;
 
