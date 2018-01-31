@@ -246,7 +246,13 @@ MonoBehaviour:
   playerSpeed: 0.5
   shot: {fileID: 1865421138852910, guid: 02c8b5b3a7eb82648a3671199329372f, type: 2}
   shotSpawn: {fileID: 4867313328816652}
-  fireRate: 1
+  fireRate: 0.2
+  angle: {x: 0, y: 0}
+  sp: {fileID: 0}
+  left: {fileID: 0}
+  right: {fileID: 0}
+  down: {fileID: 0}
+  up: {fileID: 0}
 --- !u!114 &114870858173862994
 MonoBehaviour:
   m_ObjectHideFlags: 1

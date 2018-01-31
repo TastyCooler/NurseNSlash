@@ -16,13 +16,16 @@ public class Hero : MonoBehaviour
     public float fireRate;
     float nextFire;
     public Vector2 angle;
-    
+    public SpriteRenderer sp;
+    public Sprite left,right,down,up;
 
     // Use this for initialization
     void Start()
     {
         animator = this.GetComponent<Animator>();
-        
+       
+
+
     }
 
     // Update is called once per frame
@@ -48,25 +51,28 @@ public class Hero : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.RightArrow) && Time.time > nextFire)
         {
-            
+            sp.GetComponent<SpriteRenderer>().sprite = right;
             angle = transform.right;
             nextFire = Time.time + fireRate;
             Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
         }
         else if (Input.GetKeyDown(KeyCode.LeftArrow) && Time.time > nextFire)
         {
+            sp.GetComponent<SpriteRenderer>().sprite = left;
             angle = new Vector2(-1, 0); 
             nextFire = Time.time + fireRate;
             Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
         }
         else if (Input.GetKeyDown(KeyCode.UpArrow) && Time.time > nextFire)
         {
+            sp.GetComponent<SpriteRenderer>().sprite = up;
             angle = transform.up;
             nextFire = Time.time + fireRate;
             Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow) && Time.time > nextFire)
         {
+            sp.GetComponent<SpriteRenderer>().sprite = down;
             angle = new Vector2(0, -1);
             nextFire = Time.time + fireRate;
             Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
