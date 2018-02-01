@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 50658941815182474}
   - component: {fileID: 61632847676877690}
   - component: {fileID: 114249541087538676}
-  - component: {fileID: 114330735575174462}
   m_Layer: 9
   m_Name: Nurse
   m_TagString: Untagged
@@ -38,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1503925435117358}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.38, y: 0.284, z: 1}
+  m_LocalPosition: {x: 0.47132653, y: 0.008384989, z: 1}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -101,19 +100,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 0}
---- !u!114 &114330735575174462
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1503925435117358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d7098095576043428678da8a8eb6ed7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.5
-  hero: {fileID: 114428937523693220, guid: 827608c1dd099ac45a126227d565ac39, type: 2}
 --- !u!212 &212175581084660792
 SpriteRenderer:
   m_ObjectHideFlags: 1
