@@ -1,33 +1,27 @@
 ﻿using UnityEngine;
-using UnityEngine.AI;
 
 public class TestPathFinding : MonoBehaviour {
 
-    /// <summary>
-    /// 
-    /// </summary>
-    public Transform victim;
-
-    /// <summary>
-    /// 
-    /// </summary>
-    private NavMeshAgent navComponent;
+    [Range(0, 0.5f)]
+    public float speed;
+    public Hero hero;
 
     // Use this for initialization
-    void Start () {
-        // 
-        navComponent = GetComponent<NavMeshAgent>();
-    }
-	
-	// Update is called once per frame
-	void Update () {
-        Herofinder();
+    void Start ()
+    {
+        hero = FindObjectOfType<Hero>();
     }
 
-    void Herofinder()
+    void Update()
+    {
+        Find();
+    }
+
+    void Find()
     {
         
-            navComponent.SetDestination(victim.position);
-        
+        Vector3 localPosition = hero.transform.position - transform.position;
+        localPosition = localPosition.normalized; // The normalized direction in LOCAL space
+        transform.Translate(localPosition.x * Time.deltaTime * speed, localPosition.y * Time.deltaTime * speed, localPosition.z * Time.deltaTime * speed);
     }
 }
