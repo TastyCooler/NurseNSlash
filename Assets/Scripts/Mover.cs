@@ -23,8 +23,11 @@ public class Mover : MonoBehaviour {
         myRigidBody2D.velocity = hero.angle * speed;
     }
 
+    private void OnTriggerEnter2D(Collider2D trigger)
+    {
+        Destroy(gameObject);
+    }
 
-    
 
 }
 
