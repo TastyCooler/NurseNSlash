@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: c28285192311f414fb74e8b5e8f2f8ef
-timeCreated: 1517410075
+timeCreated: 1517475284
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -240,12 +240,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -1
     wrapU: 1
-    wrapV: -1
-    wrapW: -1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -396,10 +396,10 @@ TextureImporter:
       name: wall_corner_tl
       rect:
         serializedVersion: 2
-        x: 96
+        x: 97
         y: 120
-        width: 8
-        height: 8
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -411,9 +411,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 104
-        y: 120
+        y: 123
         width: 8
-        height: 8
+        height: 4
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -425,9 +425,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 112
-        y: 120
+        y: 121
         width: 8
-        height: 8
+        height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -440,8 +440,8 @@ TextureImporter:
         serializedVersion: 2
         x: 120
         y: 120
-        width: 8
-        height: 8
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -536,9 +536,9 @@ TextureImporter:
       name: wall_corner_l2
       rect:
         serializedVersion: 2
-        x: 96
+        x: 97
         y: 112
-        width: 8
+        width: 4
         height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -564,9 +564,9 @@ TextureImporter:
       name: wall_corner_r2
       rect:
         serializedVersion: 2
-        x: 120
+        x: 123
         y: 112
-        width: 8
+        width: 4
         height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -662,9 +662,9 @@ TextureImporter:
       name: wall_corner_l1
       rect:
         serializedVersion: 2
-        x: 96
+        x: 97
         y: 104
-        width: 8
+        width: 4
         height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -676,9 +676,9 @@ TextureImporter:
       name: wall_corner_r1
       rect:
         serializedVersion: 2
-        x: 120
+        x: 122
         y: 104
-        width: 8
+        width: 5
         height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -774,10 +774,10 @@ TextureImporter:
       name: wall_corner_dl
       rect:
         serializedVersion: 2
-        x: 96
-        y: 96
-        width: 8
-        height: 8
+        x: 97
+        y: 97
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -789,9 +789,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 104
-        y: 96
+        y: 97
         width: 8
-        height: 8
+        height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -803,9 +803,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 112
-        y: 96
+        y: 97
         width: 8
-        height: 8
+        height: 4
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -817,9 +817,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 120
-        y: 96
-        width: 8
-        height: 8
+        y: 97
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
