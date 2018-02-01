@@ -16,7 +16,6 @@ public class Nurse : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.LogFormat("Nurses hp:{0}", hp);
 	}
 
     private void OnTriggerEnter2D(Collider2D trigger)
