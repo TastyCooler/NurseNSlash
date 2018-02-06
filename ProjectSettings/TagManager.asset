@@ -3,8 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Ignore Player
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -14,12 +13,21 @@ TagManager:
   - UI
   - 
   - 
+<<<<<<< HEAD
   - Player
   - Enemy
   - Bullets
   - Powerup
   - Walls
   - Hitbox
+=======
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+>>>>>>> c8a6bc3d15aff8941f711d89d91fe0dc50bdd3bd
   - 
   - 
   - 

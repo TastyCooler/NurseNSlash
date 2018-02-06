@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Prefabs/Level.prefab.meta
 guid: 38d41763177d48d438af9c4b1eb6c002
 timeCreated: 1517486404
+=======
+guid: 5b359e8bab6a57148b5a47cc5359f3c1
+timeCreated: 1517307427
+>>>>>>> af9196f8b15bdaae14b3aac8655d989f9a754c4d:Assets/Prefabs/Level.prefab.meta
 licenseType: Free
 NativeFormatImporter:
   mainObjectFileID: 100100000
