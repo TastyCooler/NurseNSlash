@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Nurse : MonoBehaviour {
 
-    int hp = 3;
-    public GameObject projectile;
+    int hp = 4;
     Hero hero;
     Score score;
 
@@ -16,25 +15,25 @@ public class Nurse : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
-        Debug.LogFormat("Nurses hp:{0}", hp);
-        
+	void Update ()
+    {
+        //Debug.LogFormat("Nurses hp:{0}", hp);
     }
 
+    
     private void OnTriggerEnter2D(Collider2D trigger)
     {
-
-        hp--;
+        takedamage();
         
-
         if (hp <= 0)
         {
-            
-            score.KillScore();
-           
-            Destroy(gameObject);
-            
+            score.KillScore(); //Getting Points for Killing 
+            Destroy(gameObject); // Deleting the GameObject(Nurse)
         }
-        
+    }
+
+    void takedamage()
+    {
+        hp -= hero.damage; //Calculator, can be used for other new features later on
     }
 }

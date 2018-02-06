@@ -167,9 +167,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa0d3d46932a7c241ac5c56b9a544ee2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hero: {fileID: 114428937523693220, guid: 827608c1dd099ac45a126227d565ac39, type: 2}
-  nurse: {fileID: 1503925435117358, guid: b8e4ffd4cf690334cb2ce03d9c491448, type: 2}
-  spawnTime: 3
+  hero: {fileID: 114410002194708406, guid: 827608c1dd099ac45a126227d565ac39, type: 2}
+  nurse: {fileID: 1810614920738608, guid: b8e4ffd4cf690334cb2ce03d9c491448, type: 2}
+  spawnTime: 1
   spawnPoints:
   - {fileID: 4817135815202578}
   - {fileID: 4371627155004044}

@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 
-public class TestPathFinding : MonoBehaviour {
+public class TestPathFinding : MonoBehaviour
+{
 
     [Range(0, 0.5f)]
-    public float speed;
+    public float maxspeed;
     public Hero hero;
 
     // Use this for initialization
-    void Start ()
+    void Start()
     {
         hero = FindObjectOfType<Hero>();
     }
@@ -19,9 +20,9 @@ public class TestPathFinding : MonoBehaviour {
 
     void Find()
     {
-        
+
         Vector3 localPosition = hero.transform.position - transform.position;
         localPosition = localPosition.normalized; // The normalized direction in LOCAL space
-        transform.Translate(localPosition.x * Time.deltaTime * speed, localPosition.y * Time.deltaTime * speed, localPosition.z * Time.deltaTime * speed);
+        transform.Translate(localPosition.x * Time.deltaTime * Random.Range(0.1f, maxspeed), localPosition.y * Time.deltaTime * Random.Range(0.1f, maxspeed), localPosition.z * Time.deltaTime * maxspeed);
     }
 }

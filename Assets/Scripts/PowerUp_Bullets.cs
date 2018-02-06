@@ -7,18 +7,14 @@ public class PowerUp_Bullets : MonoBehaviour {
     Hero hero;
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
         hero = FindObjectOfType<Hero>();
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-       // hero.bulletpowerup = true; 
+        hero.bulletpowerup = true; 
         Destroy(gameObject);
         //Debug.LogFormat("hp is: {0}", hero.hp);
     }

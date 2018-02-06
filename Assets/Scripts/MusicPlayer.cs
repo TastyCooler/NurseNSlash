@@ -8,6 +8,14 @@ public class MusicPlayer : MonoBehaviour {
 
     private void Awake()
     {
+        Singleton();
+    }
+
+    /// <summary>
+    /// restricts the instantiation of a class to one object; I only need one Music Player!
+    /// </summary>
+    void Singleton()
+    {
         //Debug.Log("Music player Awake " + GetInstanceID());
         if (instance != null)
         {
@@ -20,18 +28,4 @@ public class MusicPlayer : MonoBehaviour {
             GameObject.DontDestroyOnLoad(gameObject);
         }
     }
-
-    // Use this for initialization
-    void Start () {
-       // Debug.Log("Music player Start " + GetInstanceID());
-       
-       
-    }
-
-    
-
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
