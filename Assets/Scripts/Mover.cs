@@ -24,10 +24,6 @@ public class Mover : MonoBehaviour {
         myRigidBody2D.velocity = hero.angle * speed;
     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 427e50dc7e5c5b05a6cf2517d1750092438f225b
     /// <summary>
     /// Destroying the projectiles on trigger
     /// </summary>
@@ -35,10 +31,7 @@ public class Mover : MonoBehaviour {
     {
         Destroy(gameObject);
     }
-=======
->>>>>>> c8a6bc3d15aff8941f711d89d91fe0dc50bdd3bd
 
-    
 
 }
 

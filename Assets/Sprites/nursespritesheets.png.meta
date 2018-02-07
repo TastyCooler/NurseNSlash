@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: b39bc35321b08634e8f017ed33ffe83c
-timeCreated: 1517395391
+guid: 5a810608fe48d8541ad949f56787b87d
+timeCreated: 1518028617
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -8,12 +8,12 @@ TextureImporter:
     21300002: WalkRight2
     21300004: WalkRight3
     21300006: WalkRight4
-    21300008: WalkDown1
-    21300010: WalkDown2
-    21300012: WalkDown3
-    21300014: WalkDown4
-    21300016: WalkDown5
-    21300018: WalkRight5
+    21300008: WalkRight5
+    21300010: WalkDown1
+    21300012: WalkDown2
+    21300014: WalkDown3
+    21300016: WalkDown4
+    21300018: WalkDown5
     21300020: WalkLeft1
     21300022: WalkLeft2
     21300024: WalkLeft3
@@ -29,8 +29,14 @@ TextureImporter:
     21300044: Idle3
     21300046: Idle4
     21300048: Idle5
-    21300050: Nurse
-    21300052: Needle_right
+    21300050: Needle_down
+    21300052: Needle_left
+    21300054: Needle_up
+    21300056: Needle_right
+    21300058: Nurse
+    21300060: PowerUp_Health
+    21300062: PowerUp_Shots
+  externalObjects: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -62,7 +68,7 @@ TextureImporter:
     mipBias: -1
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -84,44 +90,34 @@ TextureImporter:
   platformSettings:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
   - buildTarget: Standalone
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Android
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-  - buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
+    androidETC2FallbackOverride: 0
   - buildTarget: WebGL
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -129,12 +125,12 @@ TextureImporter:
       name: WalkRight1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 120
-        width: 8
+        width: 7
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -143,12 +139,12 @@ TextureImporter:
       name: WalkRight2
       rect:
         serializedVersion: 2
-        x: 8
+        x: 9
         y: 120
-        width: 8
+        width: 7
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -157,12 +153,12 @@ TextureImporter:
       name: WalkRight3
       rect:
         serializedVersion: 2
-        x: 16
+        x: 17
         y: 120
-        width: 8
+        width: 7
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -171,82 +167,12 @@ TextureImporter:
       name: WalkRight4
       rect:
         serializedVersion: 2
-        x: 24
+        x: 25
         y: 120
-        width: 8
+        width: 7
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: WalkDown1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 112
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: WalkDown2
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 112
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: WalkDown3
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 112
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: WalkDown4
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 112
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: WalkDown5
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 112
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -255,12 +181,82 @@ TextureImporter:
       name: WalkRight5
       rect:
         serializedVersion: 2
-        x: 32
+        x: 33
         y: 120
-        width: 8
+        width: 7
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WalkDown1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 112
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WalkDown2
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 112
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WalkDown3
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 113
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WalkDown4
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 112
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WalkDown5
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 112
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -271,10 +267,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 104
-        width: 8
+        width: 7
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -285,10 +281,10 @@ TextureImporter:
         serializedVersion: 2
         x: 8
         y: 104
-        width: 8
+        width: 7
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -299,10 +295,10 @@ TextureImporter:
         serializedVersion: 2
         x: 16
         y: 104
-        width: 8
+        width: 7
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -313,10 +309,10 @@ TextureImporter:
         serializedVersion: 2
         x: 24
         y: 104
-        width: 8
+        width: 7
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -327,10 +323,10 @@ TextureImporter:
         serializedVersion: 2
         x: 32
         y: 104
-        width: 8
+        width: 7
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -339,12 +335,12 @@ TextureImporter:
       name: WalkUp1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 96
-        width: 8
+        width: 6
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -353,12 +349,12 @@ TextureImporter:
       name: WalkUp2
       rect:
         serializedVersion: 2
-        x: 8
+        x: 9
         y: 96
-        width: 8
+        width: 6
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -367,12 +363,12 @@ TextureImporter:
       name: WalkUp3
       rect:
         serializedVersion: 2
-        x: 16
-        y: 96
-        width: 8
-        height: 8
+        x: 17
+        y: 97
+        width: 6
+        height: 7
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -381,12 +377,12 @@ TextureImporter:
       name: WalkUp4
       rect:
         serializedVersion: 2
-        x: 24
+        x: 25
         y: 96
-        width: 8
+        width: 6
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -395,12 +391,12 @@ TextureImporter:
       name: WalkUp5
       rect:
         serializedVersion: 2
-        x: 32
+        x: 33
         y: 96
-        width: 8
+        width: 6
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -409,12 +405,12 @@ TextureImporter:
       name: Idle1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 88
-        width: 8
+        width: 6
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -423,12 +419,12 @@ TextureImporter:
       name: Idle2
       rect:
         serializedVersion: 2
-        x: 8
+        x: 9
         y: 88
-        width: 8
-        height: 8
+        width: 6
+        height: 7
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -437,12 +433,12 @@ TextureImporter:
       name: Idle3
       rect:
         serializedVersion: 2
-        x: 16
+        x: 17
         y: 88
-        width: 8
-        height: 8
+        width: 6
+        height: 7
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -451,12 +447,12 @@ TextureImporter:
       name: Idle4
       rect:
         serializedVersion: 2
-        x: 24
+        x: 25
         y: 88
-        width: 8
-        height: 8
+        width: 6
+        height: 7
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -465,12 +461,68 @@ TextureImporter:
       name: Idle5
       rect:
         serializedVersion: 2
-        x: 32
+        x: 33
         y: 88
-        width: 8
+        width: 6
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Needle_down
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 120
+        width: 3
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Needle_left
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 114
+        width: 8
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Needle_up
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 105
+        width: 3
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Needle_right
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 99
+        width: 8
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -490,13 +542,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Needle_right
+      name: PowerUp_Health
       rect:
         serializedVersion: 2
-        x: 41
-        y: 99
-        width: 8
-        height: 3
+        x: 74
+        y: 82
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PowerUp_Shots
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 89
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

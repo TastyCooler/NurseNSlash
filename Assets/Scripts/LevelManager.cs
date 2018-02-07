@@ -34,7 +34,7 @@ public class LevelManager : MonoBehaviour {
     {
         if (hero != null && hero.hp <= 0)
         {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(0);
         } else
         {
             return;

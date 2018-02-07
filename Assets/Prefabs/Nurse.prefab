@@ -18,32 +18,13 @@ GameObject:
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 427e50dc7e5c5b05a6cf2517d1750092438f225b
   - component: {fileID: 4569619276515546}
   - component: {fileID: 212759251733348314}
   - component: {fileID: 50039247168095946}
   - component: {fileID: 61989457588961064}
-  - component: {fileID: 114620437145718132}
-  - component: {fileID: 114113346107116708}
-<<<<<<< HEAD
-=======
-=======
-  - component: {fileID: 4056401650408032}
-  - component: {fileID: 212175581084660792}
-  - component: {fileID: 50658941815182474}
-  - component: {fileID: 61632847676877690}
-  - component: {fileID: 114249541087538676}
-<<<<<<< HEAD
-  m_Layer: 0
-=======
-  - component: {fileID: 114330735575174462}
->>>>>>> c8a6bc3d15aff8941f711d89d91fe0dc50bdd3bd
->>>>>>> 427e50dc7e5c5b05a6cf2517d1750092438f225b
-  m_Layer: 9
->>>>>>> efcda3c8ab8fe4c8e0c49cfeed733d717c313ba5
+  - component: {fileID: 114616701193615636}
+  - component: {fileID: 114419271313302466}
+  m_Layer: 11
   m_Name: Nurse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +89,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.08, y: 0.08}
   m_EdgeRadius: 0
---- !u!114 &114113346107116708
+--- !u!114 &114419271313302466
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -116,25 +97,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1810614920738608}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6622622c25be41a48b84baaad8f1a761, type: 3}
+  m_Script: {fileID: 11500000, guid: 7260d9c5e5908084894b89ecd50d9756, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   maxspeed: 0.5
-  hero: {fileID: 114410002194708406, guid: 827608c1dd099ac45a126227d565ac39, type: 2}
---- !u!114 &114620437145718132
-=======
-<<<<<<< HEAD
-  maxspeed: 0.5
-  hero: {fileID: 114410002194708406, guid: 827608c1dd099ac45a126227d565ac39, type: 2}
---- !u!114 &114620437145718132
-=======
-<<<<<<< HEAD
-=======
-  projectile: {fileID: 0}
---- !u!114 &114330735575174462
->>>>>>> c8a6bc3d15aff8941f711d89d91fe0dc50bdd3bd
->>>>>>> 427e50dc7e5c5b05a6cf2517d1750092438f225b
+  hero: {fileID: 114893070397194588, guid: 776bc878972ed404ebdace7357585028, type: 2}
+--- !u!114 &114616701193615636
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -142,21 +110,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1810614920738608}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb94d261aa7f59b49901fca41bbc28d0, type: 3}
+  m_Script: {fileID: 11500000, guid: 90cc18c896f251d4dbba0676c4d8a888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
 --- !u!212 &212759251733348314
-=======
-<<<<<<< HEAD
---- !u!212 &212759251733348314
-=======
-  speed: 0.5
-  hero: {fileID: 114428937523693220, guid: 827608c1dd099ac45a126227d565ac39, type: 2}
->>>>>>> efcda3c8ab8fe4c8e0c49cfeed733d717c313ba5
---- !u!212 &212175581084660792
->>>>>>> c8a6bc3d15aff8941f711d89d91fe0dc50bdd3bd
->>>>>>> 427e50dc7e5c5b05a6cf2517d1750092438f225b
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -190,7 +147,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300050, guid: b39bc35321b08634e8f017ed33ffe83c, type: 3}
+  m_Sprite: {fileID: 21300058, guid: 5a810608fe48d8541ad949f56787b87d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

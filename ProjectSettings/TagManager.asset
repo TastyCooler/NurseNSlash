@@ -13,21 +13,12 @@ TagManager:
   - UI
   - 
   - 
-<<<<<<< HEAD
   - Player
-  - Enemy
-  - Bullets
-  - Powerup
   - Walls
+  - Projectiles
+  - Enemies
   - Hitbox
-=======
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
->>>>>>> 427e50dc7e5c5b05a6cf2517d1750092438f225b
+  - Powerup
   - 
   - 
   - 

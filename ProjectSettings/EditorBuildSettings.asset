@@ -4,4 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Lose.unity
+    guid: c3f2c564c0a47484d86e0205454af288
+  - enabled: 1
+    path: Assets/Scenes/NurseNSlash.unity
+    guid: 32d3929adab10834ea1c5882844ff229
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: a760f23f3d324ca4c8e116f302f209f5
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: dea502c7be3799c478318e265e51683f

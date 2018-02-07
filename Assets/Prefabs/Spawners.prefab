@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4086057895969744}
-  - component: {fileID: 114639288530941072}
+  - component: {fileID: 114812010161309116}
   m_Layer: 0
   m_Name: Spawners
   m_TagString: Untagged
@@ -156,7 +156,7 @@ Transform:
   m_Father: {fileID: 4086057895969744}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114639288530941072
+--- !u!114 &114812010161309116
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -164,11 +164,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1108426337433226}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa0d3d46932a7c241ac5c56b9a544ee2, type: 3}
+  m_Script: {fileID: 11500000, guid: 6fb9ffd777999b24cbfca3c806d73799, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hero: {fileID: 114410002194708406, guid: 827608c1dd099ac45a126227d565ac39, type: 2}
-  nurse: {fileID: 1810614920738608, guid: b8e4ffd4cf690334cb2ce03d9c491448, type: 2}
+  hero: {fileID: 114893070397194588, guid: 776bc878972ed404ebdace7357585028, type: 2}
+  nurse: {fileID: 1810614920738608, guid: 1060f29b14edbad4ea43abb5b141925f, type: 2}
   spawnTime: 1
   spawnPoints:
   - {fileID: 4817135815202578}

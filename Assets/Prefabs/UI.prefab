@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 224504857729881132}
   - component: {fileID: 222900818535544758}
   - component: {fileID: 114906352915823564}
-  - component: {fileID: 114842610646836092}
+  - component: {fileID: 114057022081382402}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 224453009229008018}
   - component: {fileID: 222154833173146212}
   - component: {fileID: 114680282454494630}
-  - component: {fileID: 114943905946063300}
+  - component: {fileID: 114575400520111940}
   m_Layer: 5
   m_Name: Lifes
   m_TagString: Untagged
@@ -65,6 +65,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &114057022081382402
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1324103938358770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5965a60c596c2c14abeeaa0a27a14d02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114452277369367122
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -102,6 +113,17 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114575400520111940
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1716769893529284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c10e822160507845a845e6dd84e2b4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114680282454494630
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -122,7 +144,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f02d87f6ae6a4424eadfa6529a933eab, type: 3}
+    m_Font: {fileID: 12800000, guid: 00cb6341a4013714a816cb721ee8e5e4, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -135,17 +157,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Lifes:'
---- !u!114 &114842610646836092
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1324103938358770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36a793fe317943e4eb785c8d843f5ecd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114906352915823564
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -166,7 +177,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f02d87f6ae6a4424eadfa6529a933eab, type: 3}
+    m_Font: {fileID: 12800000, guid: 00cb6341a4013714a816cb721ee8e5e4, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -179,17 +190,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Score:'
---- !u!114 &114943905946063300
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1716769893529284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1a5d4bb55eeff94fae1160e01938d64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!222 &222154833173146212
 CanvasRenderer:
   m_ObjectHideFlags: 1
