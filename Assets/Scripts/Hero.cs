@@ -11,6 +11,10 @@ public class Hero : MonoBehaviour
     public Transform shotSpawn; // Where to create a Projectile
     public float fireRate; // Restricts spammers
     float nextFire;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 427e50dc7e5c5b05a6cf2517d1750092438f225b
     public Vector2 angle; // Variable for the Projectile angles
 
     public int damage = 1; 
@@ -33,6 +37,13 @@ public class Hero : MonoBehaviour
 
         source = GetComponent<AudioSource>();
     }
+<<<<<<< HEAD
+=======
+=======
+    public Vector2 angle;
+    
+>>>>>>> c8a6bc3d15aff8941f711d89d91fe0dc50bdd3bd
+>>>>>>> 427e50dc7e5c5b05a6cf2517d1750092438f225b
 
     // Use this for initialization
     void Start()
@@ -45,9 +56,19 @@ public class Hero : MonoBehaviour
     void Update()
     {
         Shoot();
+<<<<<<< HEAD
        // Debug.LogFormat("Heros hp:{0} Heros dmg:{1}", hp, damage);
         damageup();
         
+=======
+<<<<<<< HEAD
+       // Debug.LogFormat("Heros hp:{0} Heros dmg:{1}", hp, damage);
+        damageup();
+        
+=======
+
+>>>>>>> c8a6bc3d15aff8941f711d89d91fe0dc50bdd3bd
+>>>>>>> 427e50dc7e5c5b05a6cf2517d1750092438f225b
     }
 
     private void FixedUpdate()
@@ -66,29 +87,52 @@ public class Hero : MonoBehaviour
     // Shooting Function
     void Shoot()
     {
+<<<<<<< HEAD
         if (Input.GetKeyDown(KeyCode.RightArrow) && Time.time > nextFire )
+=======
+<<<<<<< HEAD
+        if (Input.GetKeyDown(KeyCode.RightArrow) && Time.time > nextFire )
+=======
+        if (Input.GetKeyDown(KeyCode.RightArrow) && Time.time > nextFire)
+>>>>>>> c8a6bc3d15aff8941f711d89d91fe0dc50bdd3bd
+>>>>>>> 427e50dc7e5c5b05a6cf2517d1750092438f225b
         {
-            sp.GetComponent<SpriteRenderer>().sprite = right;
+            
             angle = transform.right;
             nextFire = Time.time + fireRate;
             Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 427e50dc7e5c5b05a6cf2517d1750092438f225b
             float vol = Random.Range(volLowRange, volHighRange);
             source.PlayOneShot(shootSound, vol);
 
         } 
          if (Input.GetKeyDown(KeyCode.LeftArrow) && Time.time > nextFire)
+=======
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftArrow) && Time.time > nextFire)
+>>>>>>> c8a6bc3d15aff8941f711d89d91fe0dc50bdd3bd
         {
-            sp.GetComponent<SpriteRenderer>().sprite = left;
             angle = new Vector2(-1, 0); 
             nextFire = Time.time + fireRate;
             Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+<<<<<<< HEAD
             float vol = Random.Range(volLowRange, volHighRange);
             source.PlayOneShot(shootSound, vol);
 
+=======
+<<<<<<< HEAD
+            float vol = Random.Range(volLowRange, volHighRange);
+            source.PlayOneShot(shootSound, vol);
+
+=======
+>>>>>>> c8a6bc3d15aff8941f711d89d91fe0dc50bdd3bd
+>>>>>>> 427e50dc7e5c5b05a6cf2517d1750092438f225b
         }
-         if (Input.GetKeyDown(KeyCode.UpArrow) && Time.time > nextFire)
+        else if (Input.GetKeyDown(KeyCode.UpArrow) && Time.time > nextFire)
         {
-            sp.GetComponent<SpriteRenderer>().sprite = up;
             angle = transform.up;
             nextFire = Time.time + fireRate;
             Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
@@ -98,9 +142,8 @@ public class Hero : MonoBehaviour
 
 
         }
-         if (Input.GetKeyDown(KeyCode.DownArrow) && Time.time > nextFire)
+        else if (Input.GetKeyDown(KeyCode.DownArrow) && Time.time > nextFire)
         {
-            sp.GetComponent<SpriteRenderer>().sprite = down;
             angle = new Vector2(0, -1);
             nextFire = Time.time + fireRate;
             Instantiate(shot, shotSpawn.position, shotSpawn.rotation);

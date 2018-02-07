@@ -1,9 +1,13 @@
 fileFormatVersion: 2
-guid: c94dc2106ff2fd240b208bce42710283
+<<<<<<< HEAD:Assets/Sounds/146730__fins__shoot.wav.meta
+guid: 13f4fcb1456feca4a98cd7e32361fc8d
+timeCreated: 1517830811
+=======
+guid: fcd6f249c92526947ab199bfb173fd2f
 timeCreated: 1517398789
+>>>>>>> c8a6bc3d15aff8941f711d89d91fe0dc50bdd3bd:Assets/Sounds/EnterGame.wav.meta
 licenseType: Free
 AudioImporter:
-  externalObjects: {}
   serializedVersion: 6
   defaultSettings:
     loadType: 0

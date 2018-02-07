@@ -18,6 +18,10 @@ GameObject:
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 427e50dc7e5c5b05a6cf2517d1750092438f225b
   - component: {fileID: 4844667817922306}
   m_Layer: 10
   m_Name: ShotSpawn
@@ -41,6 +45,18 @@ GameObject:
   - component: {fileID: 114410002194708406}
   - component: {fileID: 82501743144694296}
   m_Layer: 8
+<<<<<<< HEAD
+=======
+=======
+  - component: {fileID: 4130342178411732}
+  - component: {fileID: 212383403741460776}
+  - component: {fileID: 50920970002875116}
+  - component: {fileID: 61667969634175394}
+  - component: {fileID: 95900545937293580}
+  - component: {fileID: 114428937523693220}
+  m_Layer: 0
+>>>>>>> c8a6bc3d15aff8941f711d89d91fe0dc50bdd3bd
+>>>>>>> 427e50dc7e5c5b05a6cf2517d1750092438f225b
   m_Name: Hero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,6 +87,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1719724016306116}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 427e50dc7e5c5b05a6cf2517d1750092438f225b
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -85,6 +105,12 @@ Transform:
   m_GameObject: {fileID: 1399248639859780}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.38033232, y: -0.1300502, z: 1}
+<<<<<<< HEAD
+=======
+=======
+  m_LocalPosition: {x: -0.49, y: 0, z: 1}
+>>>>>>> c8a6bc3d15aff8941f711d89d91fe0dc50bdd3bd
+>>>>>>> 427e50dc7e5c5b05a6cf2517d1750092438f225b
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 4844667817922306}
@@ -285,7 +311,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 0.5
   shot: {fileID: 1865421138852910, guid: 02c8b5b3a7eb82648a3671199329372f, type: 2}
+<<<<<<< HEAD
   shotSpawn: {fileID: 4844667817922306}
+=======
+<<<<<<< HEAD
+  shotSpawn: {fileID: 4844667817922306}
+=======
+  shotSpawn: {fileID: 4867313328816652}
+<<<<<<< HEAD
+  fireRate: 1
+--- !u!114 &114870858173862994
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1625247425912128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23fd1f33b688dba4b8facc4db433d8f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+=======
+>>>>>>> c8a6bc3d15aff8941f711d89d91fe0dc50bdd3bd
+>>>>>>> 427e50dc7e5c5b05a6cf2517d1750092438f225b
   fireRate: 0.1
   angle: {x: 0, y: 0}
   damage: 1
@@ -296,6 +345,10 @@ MonoBehaviour:
   right: {fileID: 21300052, guid: b39bc35321b08634e8f017ed33ffe83c, type: 3}
   down: {fileID: 21300054, guid: b39bc35321b08634e8f017ed33ffe83c, type: 3}
   up: {fileID: 21300058, guid: b39bc35321b08634e8f017ed33ffe83c, type: 3}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 427e50dc7e5c5b05a6cf2517d1750092438f225b
   shootSound: {fileID: 8300000, guid: 13f4fcb1456feca4a98cd7e32361fc8d, type: 3}
 --- !u!114 &114790988411071950
 MonoBehaviour:
@@ -309,6 +362,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212973849165068344
+<<<<<<< HEAD
+=======
+=======
+  hp: 3
+  bulletpowerup: 0
+>>>>>>> efcda3c8ab8fe4c8e0c49cfeed733d717c313ba5
+--- !u!212 &212383403741460776
+>>>>>>> c8a6bc3d15aff8941f711d89d91fe0dc50bdd3bd
+>>>>>>> 427e50dc7e5c5b05a6cf2517d1750092438f225b
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

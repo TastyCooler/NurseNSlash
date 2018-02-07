@@ -18,13 +18,32 @@ GameObject:
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 427e50dc7e5c5b05a6cf2517d1750092438f225b
   - component: {fileID: 4569619276515546}
   - component: {fileID: 212759251733348314}
   - component: {fileID: 50039247168095946}
   - component: {fileID: 61989457588961064}
   - component: {fileID: 114620437145718132}
   - component: {fileID: 114113346107116708}
+<<<<<<< HEAD
+=======
+=======
+  - component: {fileID: 4056401650408032}
+  - component: {fileID: 212175581084660792}
+  - component: {fileID: 50658941815182474}
+  - component: {fileID: 61632847676877690}
+  - component: {fileID: 114249541087538676}
+<<<<<<< HEAD
+  m_Layer: 0
+=======
+  - component: {fileID: 114330735575174462}
+>>>>>>> c8a6bc3d15aff8941f711d89d91fe0dc50bdd3bd
+>>>>>>> 427e50dc7e5c5b05a6cf2517d1750092438f225b
   m_Layer: 9
+>>>>>>> efcda3c8ab8fe4c8e0c49cfeed733d717c313ba5
   m_Name: Nurse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,9 +119,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6622622c25be41a48b84baaad8f1a761, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   maxspeed: 0.5
   hero: {fileID: 114410002194708406, guid: 827608c1dd099ac45a126227d565ac39, type: 2}
 --- !u!114 &114620437145718132
+=======
+<<<<<<< HEAD
+  maxspeed: 0.5
+  hero: {fileID: 114410002194708406, guid: 827608c1dd099ac45a126227d565ac39, type: 2}
+--- !u!114 &114620437145718132
+=======
+<<<<<<< HEAD
+=======
+  projectile: {fileID: 0}
+--- !u!114 &114330735575174462
+>>>>>>> c8a6bc3d15aff8941f711d89d91fe0dc50bdd3bd
+>>>>>>> 427e50dc7e5c5b05a6cf2517d1750092438f225b
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -113,7 +145,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb94d261aa7f59b49901fca41bbc28d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
 --- !u!212 &212759251733348314
+=======
+<<<<<<< HEAD
+--- !u!212 &212759251733348314
+=======
+  speed: 0.5
+  hero: {fileID: 114428937523693220, guid: 827608c1dd099ac45a126227d565ac39, type: 2}
+>>>>>>> efcda3c8ab8fe4c8e0c49cfeed733d717c313ba5
+--- !u!212 &212175581084660792
+>>>>>>> c8a6bc3d15aff8941f711d89d91fe0dc50bdd3bd
+>>>>>>> 427e50dc7e5c5b05a6cf2517d1750092438f225b
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
