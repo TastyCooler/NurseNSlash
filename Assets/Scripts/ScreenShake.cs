@@ -10,9 +10,16 @@ public class ScreenShake : MonoBehaviour
     protected float shakeAmount;
     Hitbox hit;
 
+    // variables to set transform.position to this variable
+    // saving coordinates
+    protected float objectposx;
+    protected float objectposy;
+    protected float objectposz;
+
     private void FixedUpdate()
     {
         hit = FindObjectOfType<Hitbox>();
+
         if (shakeTimer >= 0)
         {
             Vector2 ShakePos = Random.insideUnitCircle * shakeAmount;
@@ -23,10 +30,19 @@ public class ScreenShake : MonoBehaviour
         }
 
 
-     //   if (hit.Triggered())
-      //  {
-            ShakeCamera(0.01f, 0.2f);
-      //  }
+        if (hit.Triggered())
+        {
+            // saving gameObject position in the variables
+            objectposx = gameObject.transform.position.x;
+            objectposy = gameObject.transform.position.y;
+            objectposz = gameObject.transform.position.z;
+
+            ShakeCamera(0.005f, 0.1f);
+        }
+        else
+        {
+            
+        }
     }
 
     public void ShakeCamera(float shakePower, float shakeDuration)

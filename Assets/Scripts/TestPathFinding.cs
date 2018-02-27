@@ -22,7 +22,12 @@ public class TestPathFinding : MonoBehaviour
     {
 
         Vector3 localPosition = hero.transform.position - transform.position;
-        localPosition = localPosition.normalized; // The normalized direction in LOCAL space
-        transform.Translate(localPosition.x * Time.deltaTime * Random.Range(0.1f, maxspeed), localPosition.y * Time.deltaTime * Random.Range(0.1f, maxspeed), localPosition.z * Time.deltaTime * maxspeed);
+
+        // The normalized direction in LOCAL space
+        localPosition = localPosition.normalized;
+
+        // 
+        transform.Translate(localPosition.x * Time.deltaTime * Random.Range(0.1f, maxspeed), localPosition.y * Time.deltaTime * Random.Range(0.1f, maxspeed),
+                            localPosition.z * Time.deltaTime * maxspeed);
     }
 }

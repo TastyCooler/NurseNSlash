@@ -113,6 +113,10 @@ public class Hero : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// This function set the animation from idle to walkanimations.
+    /// Switch animationstates by targetVelocity + or - in horizontal or vertical directions.
+    /// </summary>
     void Animation()
     {
         if (targetVelocity.x > 0)
@@ -151,5 +155,4 @@ public class Hero : MonoBehaviour
             damage = 2;
         }
     }
-    // test
 }

@@ -26,10 +26,9 @@ public class Score : MonoBehaviour {
     // Update is called once per frame
     void Update ()
     {
-        //Debug.LogFormat("score is: {0}", score);
-        TimeScore();
-        myText.text = "Score:" + score.ToString();
-
+        Debug.LogFormat("score is: {0}", score);
+        //TimeScore();
+        //myText.text = "Score:" + score.ToString();
     }
 
     /// <summary>
@@ -40,9 +39,7 @@ public class Score : MonoBehaviour {
         if (FindObjectOfType<Hero>()!= null)
         {
             score += Random.Range(10, 21);
-            
         }
-        
     }
 
     /// <summary>
@@ -53,9 +50,6 @@ public class Score : MonoBehaviour {
         if (FindObjectOfType<Hero>() != null)
         {
           score += Time.deltaTime;
-          
         }
     }
-
-   
 }

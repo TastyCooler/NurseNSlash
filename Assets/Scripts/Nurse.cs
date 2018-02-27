@@ -6,12 +6,14 @@ public class Nurse : MonoBehaviour {
 
     int hp = 4;
     Hero hero;
-    Score score;
+ 
+    public int scoreValue = 150;
+    private ScoreKeeper scoreKeeper;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         hero = FindObjectOfType<Hero>();
-        score = FindObjectOfType<Score>();
+        scoreKeeper = GameObject.Find("Score").GetComponent<ScoreKeeper>();
     }
 	
 	// Update is called once per frame
@@ -27,8 +29,9 @@ public class Nurse : MonoBehaviour {
         
         if (hp <= 0)
         {
-            score.KillScore(); //Getting Points for Killing 
+            
             Destroy(gameObject); // Deleting the GameObject(Nurse)
+            scoreKeeper.Score(scoreValue);   //Getting Points for Killing 
         }
     }
 
